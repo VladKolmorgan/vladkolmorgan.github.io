@@ -1,0 +1,31 @@
+/*
+Vlad Kolmorgan
+9/21/2023
+*/
+header{
+    background-color: darkgreen;
+}
+footer{
+    background-color: darkgreen;
+}
+p{
+    font-size: 20px;
+}
+ul{
+    font-size: 20px;
+}
+li{
+    font-size: 20px;
+}
+a:link{
+    color: aqua;
+}
+a:visited{
+    color: darkgrey;
+}
+a:hover{
+    color: crimson;
+}
+a:active{
+    color: blueviolet;
+}
