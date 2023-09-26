@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+body {
+ background: #fb8500; 
+}	
+
+.tableStyle {
+  border: 9px solid #ffb703;
+  background-color: #8ecae6;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: left;
+  font-size: 20px;
+}
+/*** for urls ***/
+a:link{
+color: red;
+}
+a:visited{
+color: purple;
+}
+a:hover{
+color: green;
+}
+a:active{
+color: yellow;
+}
+/*** ***/
+caption {
+  color: #FFFFFF;
+  font-size: 30px;
+}
+thead {
+	background-color: #219ebc;
+}
+
+tr:nth-child(even) {
+  background: #D0E4F5;
+}
+
+tfoot {
+	text-align: center;
+  color: #FFFFFF;
+	background-color: #023047;
+}
