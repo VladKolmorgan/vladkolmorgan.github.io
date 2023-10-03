@@ -1,0 +1,61 @@
+/*
+*Vlad Kolmorgan
+*10/3/2023
+*/
+#outerwrapper {
+
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 70%;
+} 
+
+body {
+	background-color: #B8D1EB;
+	color: #000000;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+nav li {
+	list-style: none;
+}
+
+main {
+	background-color: #C5A98B;
+	padding: 10px;
+}
+
+main ul{
+	list-style-image: url(../images/tomato.png);
+}
+
+h1 {
+	font-family: Verdana;
+	font-size: 50px;
+}
+
+h2{
+	font-family: Arial;
+	font-weight: normal;
+	font-style: italic;
+}
+
+.floatleft { 
+	float: left;
+	margin-right: 3%;
+}
+
+.floatright {
+	float: right;
+	margin-left: 3%;
+}
+
+main, footer { 
+	clear: both;
+}
+
+footer{
+	font-size:.75em;
+	text-align: center;
+	background-color: tomato;
+	padding: 10px 0px;
+}
