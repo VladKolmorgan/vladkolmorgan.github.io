@@ -1,0 +1,20 @@
+/* Vlad Kolmorgan */
+/* 10/21/2023 */
+.programmingExamples{
+    width: 100%;
+    margin: 0 auto;
+}
+.programmingBox{
+    background-color: white;
+    border: 1px black;
+    float: left;
+    margin: 10px;
+    width: 31%;
+    text-align: center;
+}
+.programmingBox h2{
+    background-color: rgb(46, 46, 46);
+}
+.programmingBox p{
+    background-color: rgba(255, 174, 0, 0.651);
+}
