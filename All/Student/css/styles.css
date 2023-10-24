@@ -1,0 +1,60 @@
+/* Vlad Kolmorgan */
+/* 10/24/2024 */
+
+
+@font-face {
+    font-family: 'roboto';
+    src: url('../fonts/roboto-black-webfont.woff') format('woff'),
+         url('../fonts/roboto-black-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+#outerwrapper {	
+	border-radius: 15%;
+	background: rgba(243,205,170, 0.4);
+	width:70%;
+	margin: auto;
+}
+html{
+	background-image:url(../images/jewelry.jpg);
+	position: top;
+	border-image-repeat: no-repeat;
+	background-size: cover;
+}
+footer{
+	font-size: 1em;
+	padding-bottom: 10px;
+	text-align: center;
+}
+main{
+	background: linear-gradient(#FFFFFF, #F0F9E6);
+	padding: 10px;
+	margin: 20px;
+	border-radius: 2em;
+	font-size: 1.25em;
+	font-family: Arial, Helvetica, sans-serif;
+}
+img{
+	float: left;
+	border-radius: 10em;
+}
+.addrightmargin{
+	margin-right: 10%;
+}
+nav{
+	font-size: 1.5em;
+	clear:both;
+}
+nav li{
+	list-style:none;
+}
+h1{
+	font-family: 'Pacifico', cursive;
+	font-size:4em
+}
+h2{
+	font-family: 'roboto';
+	font-size: 2em;
+	font-style: italic;
+}
+
