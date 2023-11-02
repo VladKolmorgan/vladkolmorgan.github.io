@@ -1,0 +1,10 @@
+/* Vlad Kolmorgan */
+/* 11/1/2023 */
+body{
+    color:gray;
+    background-color: rgb(103, 203, 236);
+    text-shadow: black 1px 1px 1px;
+}
+a:link{
+    color:lightsalmon;
+}
