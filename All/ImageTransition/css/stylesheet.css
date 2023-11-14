@@ -1,8 +1,0 @@
-img{
-    padding: 20px;
-    width: 250px;
-    transition: width 2s ease 0.5s;
-}
-img:hover{
-    width: 350px;
-}
