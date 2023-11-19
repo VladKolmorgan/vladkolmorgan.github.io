@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+@font-face {
+	font-family: "Quicksand-Bold";
+	src: url("../fonts/Quicksand-Bold.otf") format("opentype");
+}
+
+body { 
+	background-color: #B8D1EB;
+	font-family: "Times New Roman", serif;
+}
+
+#outerwrapper { 
+    width: 70%;
+	margin: 0 auto;
+}
+
+/*applied cityFarmer.jpg */
+.floatleft {	
+	float: left;
+	margin-right: 3%;
+}
+
+h1 {
+	font-family: 'Righteous', cursive;
+	font-size: 60px;
+}
+
+h2 {
+	font-family: 'Quicksand-Bold', Arial, sans-serif;
+	font-weight:normal;
+	font-style:italic;
+}
+
+main {	
+	background-color: #C5A98B;
+	padding: 10px;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	background-color: #C5A98B;
+  }
+  
+nav ul li a {
+	display: block;
+	color: #000;
+	padding: 8px 16px;
+	text-decoration: none;
+}
+
+nav > ul > li > a.active {
+	background-color: #7a6b48;
+	color: #000;
+}  
+
+  /* Change the link color on hover */
+nav > ul > li > a:hover:not(.active) {
+	background-color: #7a6b48;
+	color: #8B0000 ;
+}
+
+/* applied hothouse.jpg */
+.floatright {
+	float: right;
+	margin-left: 3%;
+}
+	
+main > ul {
+	list-style-image: url(../images/tomatoeBullet.png);
+}
+
+main, footer{ 
+	clear: both;
+}
+footer {
+	font-size: 0.75em;
+	text-align: center;
+	background-color: #7a6b48;
+	padding: 10px 0px;
+}
