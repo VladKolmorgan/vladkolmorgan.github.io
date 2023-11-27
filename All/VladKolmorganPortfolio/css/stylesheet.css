@@ -1,0 +1,133 @@
+/* colors for website
+light: #AEE8ED;
+light-med: #79CED6;
+dark-med: #30959E;
+dark: #18848E;
+text color: rgb(58, 58, 58);
+*/
+/*Fonts*/
+@font-face{
+    font-family: 'Pacifico';
+    src:url('../fonts/pacifico-webfont.woff')format('woff');
+    src:url('../fonts/pacifico-webfont.woff2')format('woff2');
+}
+body{
+    font-family: 'Roboto' , sans-serif;
+}
+h1, nav{
+    font-family: 'Pacifico' ,'Roboto' , sans-serif;
+    text-shadow: black 1px 2px 1px;
+}
+/*General CSS*/
+body{
+    background: linear-gradient(to top, #18848E, #AEE8ED 20%);
+    color: rgb(58, 58, 58);
+    display: inline;
+}
+nav{
+    background-color: #AEE8ED;
+    border-bottom: 3px solid #18848E;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    margin-right: 5%;
+}
+footer{
+    border-top: 3px solid #18848E;
+    padding-left: 1%;
+}
+footer ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 1px;
+}
+h1 img{
+    float: left;
+}
+h1{
+    color: #AEE8ED;
+    background-color: #18848E;
+    text-align: center;
+    padding: 1%;
+}
+h2, h3{
+    color: #18848E;
+}
+#computer{
+    width: 100%;
+}
+span{
+    color: black;
+    font-style: italic;
+    font-weight: bold;
+}
+/*Table CSS*/
+table{
+    border: 5px solid #18848E;
+    background-color: #AEE8ED;
+    width: 80%;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 12px;
+}
+caption{
+    background-color: #18848E;
+    color: #AEE8ED;
+}
+thead th:nth-child(even){
+    border-right: 1px solid #18848E;
+    border-left: 1px solid #18848E;
+}
+tbody td{
+    border: 1px solid #18848E;
+}
+tfoot td{
+    border: 1px solid #18848E;
+    text-align: center;
+}
+/*Project Example CSS*/
+.Projects{
+    display: flex;
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+}
+.ProjectBox{
+    border: 5px solid #18848E;
+    width: 31%;
+    text-align: center;
+    margin: 10px;
+}
+.ProjectBox img{
+    width: 100%;
+}
+/*Form CSS*/
+div {
+    margin: 10px;
+}
+label {
+    margin-right: 15px;
+    width: 94%;
+    display: inline-block;
+}
+/*Link CSS*/
+a:link{
+    color: #18848E;
+}
+a:visited{
+    color: rgb(58, 58, 58);
+}
+a:hover{
+    color: white;
+    background-color: #18848E;
+}
+a:active{
+    color: #AEE8ED;
+}
+footer a img:hover{
+    background-color: white;
+}
