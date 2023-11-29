@@ -110,8 +110,8 @@ div {
     margin: 10px;
 }
 label {
-    margin-right: 15px;
-    width: 94%;
+    /*margin-right: 15px;*/
+    width: 80%;
     display: inline-block;
 }
 input{
