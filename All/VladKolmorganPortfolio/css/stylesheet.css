@@ -114,6 +114,21 @@ label {
     width: 94%;
     display: inline-block;
 }
+input{
+    padding: 10px;
+    border: 3px solid #18848E;
+}
+fieldset input{
+    padding: 5px;
+    border: 3px solid #18848E;
+    transition: all 1s ease;
+}
+fieldset input:focus{
+    font-size: 1.5em;
+    padding: 15px;
+    border: 6px solid #18848E;
+    outline: none;
+}
 /*Link CSS*/
 a:link{
     color: #18848E;
