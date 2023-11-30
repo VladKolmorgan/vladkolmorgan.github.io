@@ -110,12 +110,10 @@ div {
     margin: 10px;
 }
 label {
-    margin-right: 15px;
-    width: 94%;
     display: inline-block;
+    margin-right: 15px;
 }
 input{
-    padding: 10px;
     border: 3px solid #18848E;
 }
 fieldset input{
