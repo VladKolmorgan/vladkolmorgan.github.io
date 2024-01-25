@@ -1,0 +1,41 @@
+h1, h2{
+    color: #597d44;
+    text-shadow: 3px 1px 3px black;
+    font-size: 30px;
+}
+h1{
+    text-align: center;
+    font-size:50px;
+}
+body{
+    color: #FFAE57;
+    text-shadow: 2px 2px 2px black;
+    background-image: url(../images/Dirt.jpg);
+}
+section{
+    background: rgba(255, 127, 7, 0.4);
+    border: 5px solid #597d44;
+    width: 90%;
+    margin: auto;
+}
+footer{
+    text-align: center;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    color: #597d44;
+    font-size:20px;
+}
+main a:hover,nav ul li a:hover{
+    background-color: #FFAE57;
+    border-radius: 40px;
+    font-size: 25px;
+    color: black;
+}
+main a, nav ul a{
+    color: #597d44;
+    text-decoration: none;
+}
