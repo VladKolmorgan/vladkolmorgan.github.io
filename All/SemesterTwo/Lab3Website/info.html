@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author:Vlad Kolmorgan
+#Date Created:2/24/2024
+#Version:v 2.0.0
+#Date Last Modified:2/24/2024
+#Modified by:Vlad Kolmorgan
+#Modification log:
+v 1.0.0 - 2/24/2024 - First version created, info page designed and produced. Features include a carousel for the
+                      user to click on.
+v 2.0.0 - 2/25/2024 - Touched up page information and image contents.
+--
+------------------------------------------------------------------------------------------------------------------>
+<html lang="en">
+    <head>
+        <title>About Ants</title>
+        <meta charset="UTF-8">
+        <meta name="Author" content="Vlad Kolmorgan">
+        <meta name="description" content="About Ants Page">
+        <meta name="keywords" content="Ants Antsy Info">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./css/stylesheet.css" rel="stylesheet">
+        <link href="./js/info.js" rel="javascript">
+    </head>
+    <body>
+        <section>
+            <header>
+                <a href="./index.html"><img src="./images/AntsyAntShineLogoBlackResizedSmaller.png" alt="Antsy Logo"></a>
+                <h1>About Ants</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./newsletter.html">Newsletter</a></li>
+                    <li><a href="./faq.html">FAQ</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./info.html">About Ants</a></li>
+                </ul>
+            </nav>
+            <main>
+                <h2>The Types Of Ants You Can Find</h2>
+                <p>There might be a lot of people who think of ants as just those little black bugs that
+                    try to take away your picnic, but I assure you the genetic diversity and evolution
+                    of ants is truly nothing to laugh at!
+                </p>
+                <h1>Check Out These Cool Ants</h1>
+                <p>Psst, Hey! Those small ants look clickable don't they?</p>
+                <div id="carousel">
+                    <div id="left_button" class="button_panel"><img src="./images/AntButtonLeft.png" alt=""></div>
+                    <div id="right_button" class="button_panel"><img src="./images/AntButtonRight.png" alt=""></div>
+                    <div id="image_display">
+                        <ul id="image_list">
+                            <li><img src="./images/FireAnt.jpg" alt="Fire Ant"></li>
+                            <li><img src="./images/BulletAnt.jpg" alt="Bullet Ant"></li>
+                            <li><img src="./images/TrapJawAnt.jpg" alt="Trap Jaw Ant"></li>
+                            <li><img src="./images/BulldogAnt.jpg" alt="Bulldog Ant"></li>
+                            <li><img src="./images/LeafcutterAnt.jpg" alt="Leafcutter Ant"></li>
+                        </ul>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <hr>
+                Antsy Copyright &#169; 2024 All Rights Preserved
+            </footer>
+        </section>
+        <script
+        src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous">
+        </script>
+        <script src="./js/info.js"></script>
+    </body>
+</html>

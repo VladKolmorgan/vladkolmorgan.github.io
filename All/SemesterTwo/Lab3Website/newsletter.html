@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author:Vlad Kolmorgan
+#Date Created:2/10/2024
+#Version:v 2.0.0
+#Date Last Modified:2/24/2024
+#Modified by:Vlad Kolmorgan
+#Modification log:
+v 1.0.0 - 2/11/2024 - Added a newsletter for people to subscribe to by entering their email and name
+v 2.0.0 - 2/24/2024 - Added info page to navigation
+--
+------------------------------------------------------------------------------------------------------------------>
+<html lang="en">
+    <head>
+        <title>Newsletter</title>
+        <meta charset="UTF-8">
+        <meta name="Author" content="Vlad Kolmorgan">
+        <meta name="description" content="Antsy Newsletter">
+        <meta name="keywords" content="Ants Antsy Newsletter">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./css/stylesheet.css" rel="stylesheet">
+        <link href="./js/newsletter.js" rel="javascript">
+    </head>
+    <body>
+        <section>
+            <header>
+                <a href="./index.html"><img src="./images/AntsyAntShineLogoBlackResizedSmaller.png" alt="Antsy Logo"></a>
+                <h1>Newsletter</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./newsletter.html">Newsletter</a></li>
+                    <li><a href="./faq.html">FAQ</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./info.html">About Ants</a></li>
+                </ul>
+            </nav>
+            <main>
+                <h2>Interested In Our Newsletter?</h2>
+                    <p>
+                        Our newsletter is all about those little things that we just love here at Antsy!
+                        On our newsletter we show all sorts of things about ants, their habitats, different species of ants,
+                        diets, habitats, and all sorts of other fun things about ants! 
+                    </p>
+                    <p>
+                        Not only that but you will also get news about Antsy itself! From new deals and sales to new items
+                        or limited time offers! You'll also get updates about Antsy and any new changes to our website!
+                    </p>
+                    <h2>Sign Up Here!</h2>
+                        <form name="contact_form" id="contact_form" action="./confirm.html" method="get">
+                            <div>
+                                <label for="email_1">Email:</label>
+                                <input type="text" name="email_1" id="email_1">
+                                <span id="email_1_span">*</span>
+                            </div>
+                            <div>
+                                <label for="email_2">Reconfirm Email:</label>
+                                <input type="text" name="email_2" id="email_2">
+                                <span id="email_2_span">*</span>
+                            </div>
+                            <div>
+                                <label for="first_name">First Name:</label>
+                                <input type="text" name="first_name" id="first_name">
+                                <span id="first_name_span">*</span>
+                            </div>
+                            <div>
+                                <label for="last_name">Last Name:</label>
+                                <input type="text" name="last_name" id="last_name">
+                                <span id="last_name_span">*</span>
+                            </div>
+                            <div>
+                                <label>&nbsp;</label>
+                                <input type="button" id="submit_form" value="Submit">
+                                <input type="button" id="reset_form" value="Reset">
+                            </div>
+                        </form>
+            </main>
+            <footer>
+                <hr>
+                Antsy Copyright &#169; 2024 All Rights Preserved
+            </footer>
+        </section>
+        <script src="./js/newsletter.js"></script>
+    </body>
+</html>
+

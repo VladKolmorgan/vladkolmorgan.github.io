@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author:Vlad Kolmorgan
+#Date Created:2/10/2024
+#Version:v 2.0.0
+#Date Last Modified:2/24/2024
+#Modified by:Vlad Kolmorgan
+#Modification log:
+v 1.0.0 - 2/11/2024 - Made a contact page to send contact information from user to host
+v 2.0.0 - 2/24/2024 - Added info page to navigation
+--
+------------------------------------------------------------------------------------------------------------------>
+<html lang="en">
+    <head>
+        <title>Contact</title>
+        <meta charset="UTF-8">
+        <meta name="Author" content="Vlad Kolmorgan">
+        <meta name="description" content="Antsy Contact Page">
+        <meta name="keywords" content="Ants Antsy Contact">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./css/stylesheet.css" rel="stylesheet">
+        <link href="./js/contact.js" rel="javascript">
+    </head>
+    <body>
+        <section>
+            <header>
+                <a href="./index.html"><img src="./images/AntsyAntShineLogoBlackResizedSmaller.png" alt="Antsy Logo"></a>
+                <h1>Contact Us</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./newsletter.html">Newsletter</a></li>
+                    <li><a href="./faq.html">FAQ</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./info.html">About Ants</a></li>
+                </ul>
+            </nav>
+            <main>
+                <h2>Any Questions? Any Comments? Put Your Contact Information Here!</h2>
+                    <form name="contact_form" id="contact_form" action="./confirm.html" method="get">
+                        <div>
+                            <label for="email_1">Email:</label>
+                            <input type="text" name="email_1" id="email_1">
+                            <span id="email_1_span">*</span>
+                        </div>
+                        <div>
+                            <label for="email_2">Reconfirm Email:</label>
+                            <input type="text" name="email_2" id="email_2">
+                            <span id="email_2_span">*</span>
+                        </div>
+                        <div>
+                            <label for="first_name">First Name:</label>
+                            <input type="text" name="first_name" id="first_name">
+                            <span id="first_name_span">*</span>
+                        </div>
+                        <div>
+                            <label for="last_name">Last Name:</label>
+                            <input type="text" name="last_name" id="last_name">
+                            <span id="last_name_span">*</span>
+                        </div>
+                        <div>
+                            <label for="phone">Phone Number:</label>
+                            <input type="text" name="phone" id="phone">
+                            <span id="phone_span">*</span>
+                        </div>
+                        <div>
+                            <label>Preferred Methods Of Contact:</label>
+                            <input type="checkbox" name="phone_check" id="phone_check" value="phone_yes">Phone</input>
+                            <input type="checkbox" name="text_check" id="text_check" value="text_yes">Text</input>
+                            <input type="checkbox" name="email_check" id="email_check" value="email_yes">Email</input>
+                            <span id="preferred_contact_method_span">*</span>
+                        </div>
+                        <div>
+                            <label for="reason_for_contact">Reason For Reaching Out</label>
+                            <select name="reason_for_contact" id="reason_for_contact">
+                                <option value="">Select An Option</option>
+                                <option>Question</option>
+                                <option>Comment/Feedback</option>
+                                <option>Complaint</option>
+                                <option>Other(Please Describe Below)</option>
+                            </select>
+                            <span id="reason_for_contact_span">*</span>
+                        </div>
+                        <div>
+                            <label for="message">Write Down Your Message!</label>
+                            <textarea name="message" id="message"></textarea>
+                            <span id="message_span">*</span>
+                        </div>
+                        <div>
+                            <label>&nbsp;</label>
+                            <input type="button" id="submit_form" value="Submit">
+                            <input type="button" id="reset_form" value="Reset">
+                        </div>
+                    </form>
+            </main>
+            <footer>
+                <hr>
+                Antsy Copyright &#169; 2024 All Rights Preserved
+            </footer>
+        </section>
+        <script src="./js/contact.js"></script>
+    </body>
+</html>
+
