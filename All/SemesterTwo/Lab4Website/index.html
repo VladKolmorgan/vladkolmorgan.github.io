@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author:Vlad Kolmorgan
+#Date Created:1/24/2024
+#Version:v 4.0.0
+#Date Last Modified:3/3/2024
+#Modified by:Vlad Kolmorgan
+#Modification log:
+v 1.0.0 - 1/27/2024 - First version created, index page was made and designed. Features include logo, background, 
+                      text, JavaScript, CSS. Document made on 1/24/2024, added backlog on 1/27/2024
+v 2.0.0 - 2/11/2024 - Added fill spots on the HTML page instead of a spot for JavaScript to write in
+v 3.0.0 - 2/24/2024 - Added info page to navigation
+v 4.0.0 - 3/3/2024 - Added jQuery script, added jQuery ui script, added form for dialog box, added button CSS
+                     Added Lorem Ipsum
+--
+------------------------------------------------------------------------------------------------------------------>
+<html lang="en">
+    <head>
+        <title>Antsy Home Page</title>
+        <meta charset="UTF-8">
+        <meta name="Author" content="Vlad Kolmorgan">
+        <meta name="description" content="Antsy Homepage">
+        <meta name="keywords" content="Ants Antsy Homepage">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./css/stylesheet.css" rel="stylesheet">
+        <link href="./js/jquery-ui-1.13.2.custom/jquery-ui.min.css" rel="stylesheet">
+        <link href="./js/index.js" rel="javascript">
+    </head>
+    <body>
+        <section>
+            <header>
+                <a href="./index.html"><img src="./images/AntsyAntShineLogoBlackResizedSmaller.png" alt="Antsy Logo"></a>
+                <h1>Antsy</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./newsletter.html">Newsletter</a></li>
+                    <li><a href="./faq.html">FAQ</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./info.html">About Ants</a></li>
+                </ul>
+            </nav>
+            <main>
+                <h2>We Are Antsy</h2>
+                    <p>We are an enthusiastic business all about ants! You want ants? We have them! You already have ants? 
+                        No problem! We have an inventory of ant accessories such as ant food, ant feeding tools, and ant farms!
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                <h2>How Many Ants On Earth Are There?</h2>
+                <label for="ant_guess_button">Guess How Many Ants There Are Here: </label>
+                <input type="button" id="ant_guess_button" class="button_class" value="no commas Example: (10000)">
+                <div id="message_box" title="Guessing Ant Population"><p>Guess How Many Ants Are On Earth! (Hint: it's a lot)</p>
+                    <form>
+                        <label for="ant_guess">Guess:</label>
+                        <input type="text" name="ant_guess" id="ant_guess" class="button_class" value="no commas Example: (10000)">
+                    </form>
+                </div>
+                    <p id="fill_1"></p>
+                    <p id="fill_2"></p>
+                    <p id="fill_3"></p>
+                    <p><span id="fill_4"></span><a id="fill_5" href="https://www.science.org/content/article/how-many-ants-live-earth" target="_blank"></a></p>
+            </main>
+            <footer>
+                <hr>
+                Antsy Copyright &#169; 2024 All Rights Preserved
+            </footer>
+        </section>
+        <script
+        src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous">
+        </script>
+        <script 
+        src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" 
+        integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" 
+        crossorigin="anonymous">
+        </script>
+        <script src="./js/index.js"></script>
+    </body>
+</html>
