@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author:Vlad Kolmorgan
+#Date Created:2/10/2024
+#Version:v 5.0.0
+#Date Last Modified:3/7/2024
+#Modified by:Vlad Kolmorgan
+#Modification log:
+v 1.0.0 - 2/11/2024 - Added a newsletter for people to subscribe to by entering their email and name
+v 2.0.0 - 2/24/2024 - Added info page to navigation
+v 3.0.0 - 3/2/2024 - Added jQuery script
+v 4.0.0 - 3/3/2024 - Added jQuery ui script, added progress bar, added button CSS, added Lorem Ipsum
+v 5.0.0 - 3/7/2024 - Added date picker, replaced Lorem Ipsum with chat gpt generated text
+--
+------------------------------------------------------------------------------------------------------------------>
+<html lang="en">
+    <head>
+        <title>Newsletter</title>
+        <meta charset="UTF-8">
+        <meta name="Author" content="Vlad Kolmorgan">
+        <meta name="description" content="Antsy Newsletter">
+        <meta name="keywords" content="Ants Antsy Newsletter">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./css/stylesheet.css" rel="stylesheet">
+        <link href="./js/jquery-ui-1.13.2.custom/jquery-ui.min.css" rel="stylesheet">
+        <link href="./js/newsletter.js" rel="javascript">
+    </head>
+    <body>
+        <section>
+            <header>
+                <a href="./index.html"><img src="./images/AntsyAntShineLogoBlackResizedSmaller.png" alt="Antsy Logo"></a>
+                <h1>Newsletter</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./newsletter.html">Newsletter</a></li>
+                    <li><a href="./faq.html">FAQ</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./info.html">About Ants</a></li>
+                </ul>
+            </nav>
+            <main>
+                <h2>Interested In Our Newsletter?</h2>
+                    <p>
+                        Stay connected with the latest buzz from the world of ants with Antsy's newsletter! Delivered 
+                        straight to your inbox, our newsletter is your go-to source for all things ant-related. 
+                        Packed with fascinating articles, expert tips, and exclusive discounts, it's your ticket to 
+                        becoming a true ant aficionado.
+                    </p>
+                    <p>
+                        In each edition, you'll discover captivating insights into the lives of ants, from their complex 
+                        social structures to their ingenious foraging techniques. Learn how to create the ultimate ant 
+                        habitat with our expert guides, and uncover the latest trends in ant-themed merchandise and 
+                        accessories. Plus, be the first to know about new arrivals and special promotions, available 
+                        exclusively to our loyal subscribers. Don't miss out on the excitement sign up for Antsy's 
+                        newsletter today!
+                    </p>
+                    </input>
+                    <h2>Sign Up Here!</h2>
+                    <div id="progress_bar_spacing"><div id="progress_bar"></div></div>
+                        <form name="contact_form" id="contact_form" action="./confirm.html" method="get">
+                            <div id="questions">
+                                <div>
+                                    <label for="email_1">Email:</label>
+                                    <input type="text" name="email_1" id="email_1" class="user_input">
+                                    <span id="email_1_span">*</span>
+                                </div>
+                                <div>
+                                    <label for="email_2">Reconfirm Email:</label>
+                                    <input type="text" name="email_2" id="email_2" class="user_input">
+                                    <span id="email_2_span">*</span>
+                                </div>
+                                <div>
+                                    <label for="first_name">First Name:</label>
+                                    <input type="text" name="first_name" id="first_name" class="user_input">
+                                    <span id="first_name_span">*</span>
+                                </div>
+                                <div>
+                                    <label for="last_name">Last Name:</label>
+                                    <input type="text" name="last_name" id="last_name" class="user_input">
+                                    <span id="last_name_span">*</span>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="newsletter_date">When Do You Wish To Receive The Newsletter:</label>
+                                <input type="button" id="newsletter_date" class="button_class" value="Choose Date">
+                                <div id="date_picked"></div>
+                                <div id="date_holder">
+                                    <div id="datepicker"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <label>&nbsp;</label>
+                                <input type="button" id="submit_form" class="button_class" value="Submit">
+                                <input type="button" id="reset_form" class="button_class" value="Reset">
+                            </div>
+                        </form>
+            </main>
+            <footer>
+                <hr>
+                Antsy Copyright &#169; 2024 All Rights Preserved
+            </footer>
+        </section>
+        <script
+        src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous">
+        </script>
+        <script 
+        src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" 
+        integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" 
+        crossorigin="anonymous">
+        </script>
+        <script src="./js/newsletter.js"></script>
+    </body>
+</html>
+
