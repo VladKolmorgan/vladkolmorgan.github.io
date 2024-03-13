@@ -1,0 +1,170 @@
+/*********************************************************************
+***
+*Original Author:Vlad Kolmorgan
+*Date Created:1/24/2024
+*Version:v 5.0.0
+*Date Last Modified:3/7/2024
+*Modified by:Vlad Kolmorgan
+*Modification log: 
+v 1.0.0 - 1/27/2024 - Various coloring, sizing, organization, ground work for multiple nav options changed
+                      backgrounds and borders. Document made on 1/24/2024, added backlog on 1/27/2024
+v 2.0.0 - 2/11/2024 - Added spacing and hiding for FAQ page. Added backgrounds to the form, as well as colors
+v 3.0.0 - 2/24/2024 - Added CSS for carousel
+v 3.0.1 - 2/25/2024 - Modified and tidied CSS for carousel
+v 4.0.0 - 3/3/2024 - Added CSS for progress bars, centered text for carousel, added button CSS, added CSS to message box,
+                     modified CSS for links, text shadow
+v 5.0.0 - 3/7/2024 - Added a hide class, slight modification so button style, modified a links to not have so much padding
+***Color template: Brown:rgba(255, 127, 7) Green:#597d44 Yellow:#FFAE57
+***
+******************************************************************** */
+h1, h2{
+    color: #597d44;
+    font-size: 30px;
+}
+h1, h2, h3, .div_head, nav ul li a{
+    text-shadow: 1px 1px black, 1px -1px black, -1px 1px black, -1px -1px black;
+}
+h1{
+    text-align: center;
+    font-size:50px;
+}
+body{
+    color: #FFAE57;
+    text-shadow: 1px 1px 1px black;
+    background-image: url(../images/Dirt.jpg);
+}
+section{
+    background: rgba(255, 127, 7, 0.4);
+    border: 5px solid #597d44;
+    width: 90%;
+    margin: auto;
+}
+footer{
+    text-align: center;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    color: #597d44;
+    text-shadow: 1px 1px black;
+    font-size:20px;
+}
+main a:hover,nav ul li a:hover{
+    background-color: #FFAE57;
+    border-radius: 40px;
+    color: black;
+    text-shadow: 0px 0px black;
+}
+nav ul a{
+    color: #597d44;
+    text-shadow: 1px 1px black;
+    text-decoration: none;
+    padding: 10px;
+}
+main a{
+    color: #597d44;
+    text-shadow: 1px 1px black;
+    text-decoration: none;
+    padding: 2px;
+}
+/* For FAQ Page */
+h3{
+    padding: 0 0 0 25px;
+}
+#faqs div{
+    display: none;
+}
+#faqs div.open{
+    display: block;
+    padding: 0 0 0 50px;
+}
+/* For Forms */
+form{
+    background: rgba(255, 127, 7, 0.5);
+    border: 5px solid #597d44;
+    width: 80%;
+    margin: auto;
+}
+form span{
+    color: #597d44;
+    text-shadow: 1px 1px black;
+}
+#submit_form:hover, #reset_form:hover, #skip_timer:hover{
+    background-color: #FFAE57;
+    color: black;
+}
+#message_box{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 20px;
+}
+/* Carousel */
+#carousel{
+    border: 5px solid #597d44;
+    background: rgba(255, 127, 7, 0.5);
+    width: 325px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#carousel p{
+    text-align: center;
+}
+.button_panel{
+	height: 125px;
+    width: 325px;
+    display: inline;
+}
+.button_panel img{
+	width: 100px;
+	height: 100px;
+    padding: 30px;
+}
+#image_display{
+	height: 200px;
+	width: 325px;
+	overflow: hidden;
+    display: flex;
+    flex-direction:column;
+}
+#image_list{
+	left: 0px;
+	position: relative;   
+    width: 1500px;
+    list-style: none;  
+}
+#image_list li{
+	float: left;
+	width: 300px;
+}
+#image_list li img{
+	width: 250px;
+}
+/* Progress bar*/
+#progress_bar{
+    background: black;
+    border: red;
+    border-radius: 20px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+#progress_bar_spacing{
+    margin: 10px;
+}
+/* For Buttons */
+.button_class{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 20px;
+    color: darkgreen;
+}
+.button_class:hover{
+    color: black;
+    background-color: #FFAE57;
+}
+/* For date picker */
+.hide{
+    visibility: hidden;
+}
