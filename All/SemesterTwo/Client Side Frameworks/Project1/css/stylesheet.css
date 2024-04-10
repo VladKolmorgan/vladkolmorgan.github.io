@@ -12,7 +12,7 @@ v 1.0.0 - 4/9/2024 - Added parallax class, added image classes
 
 /* Locks image into place and spreads it across background, height set to 500px */
 .parallax {
-    height: 500px;
+    height: 1000px;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
