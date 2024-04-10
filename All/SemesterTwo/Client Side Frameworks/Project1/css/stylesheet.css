@@ -1,0 +1,42 @@
+/*********************************************************************
+***
+*Original Author:Vlad Kolmorgan
+*Date Created:4/9/2024
+*Version:v 1.0.0
+*Date Last Modified:4/9/2024
+*Modified by:Vlad Kolmorgan
+*Modification log: 
+v 1.0.0 - 4/9/2024 - Added parallax class, added image classes
+***
+******************************************************************** */
+
+/* Locks image into place and spreads it across background, height set to 500px */
+.parallax {
+    height: 500px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* For convenience images are attached here as classes */
+.bg_head {
+    background-image: url("../images/helldiversbackgroundheader.jpg");
+}
+.bg_map {
+    background-image: url("../images/helldiversbackgroundmap.jpg");
+}
+.bg_earth {
+    background-image: url("../images/helldiversbackgroundearth.jpg");
+}
+.bg_gear {
+    background-image: url("../images/helldiversbackgroundgear.jpg");
+}
+.bg_auto {
+    background-image: url("../images/helldiversbackgroundauto.jpg");
+}
+.bg_term {
+    background-image: url("../images/helldiversbackgroundterm.jpg");
+}
+.bg_illu {
+    background-image: url("../images/helldiversbackgroundillu.jpg");
+}
