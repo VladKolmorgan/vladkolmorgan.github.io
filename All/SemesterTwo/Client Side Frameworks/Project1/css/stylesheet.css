@@ -6,13 +6,13 @@
 *Date Last Modified:4/9/2024
 *Modified by:Vlad Kolmorgan
 *Modification log: 
-v 1.0.0 - 4/9/2024 - Added parallax class, added image classes
+v 1.0.0 - 4/9/2024 - Added parallax class, added image classes, added limit for phones
 ***
 ******************************************************************** */
 
 /* Locks image into place and spreads it across background, height set to 500px */
 .parallax {
-    height: 1000px;
+    height: 500px;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
@@ -39,4 +39,11 @@ v 1.0.0 - 4/9/2024 - Added parallax class, added image classes
 }
 .bg_illu {
     background-image: url("../images/helldiversbackgroundillu.jpg");
+}
+/* prevents scrolling on phones */
+@media only screen and (max-width: 768px) {
+    .parallax {
+        background-attachment: scroll;
+        background-size: 100% 100%;
+    }
 }
