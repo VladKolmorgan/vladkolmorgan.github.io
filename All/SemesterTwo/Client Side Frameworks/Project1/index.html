@@ -4,11 +4,12 @@
 #Original Author:Vlad Kolmorgan
 #Date Created:4/9/2024
 #Version:v 1.0.0
-#Date Last Modified:4/9/2024
+#Date Last Modified:4/10/2024
 #Modified by:Vlad Kolmorgan
 #Modification log:
-v 1.0.0 - 4/9/2024 - First version created, made website parallax, added text content, added a fixed nav, added
-                     color for sections
+v 1.0.0 - 4/9/2024  - First version created, made website parallax, added text content, added a fixed nav, added
+                      color for sections
+v 1.1.0 - 4/10/2024 - Replaced fixed navigation bar with a dropdown navigation
 References--------------------------------------------------------------------------------------------------------- 
 Images -    https://images.hdqwalls.com/download/helldivers-2-if-1920x1080.jpg
             https://i.redd.it/hmm-how-strange-the-enemy-placement-on-the-galactic-map-in-v0-6dz9u8og3fkc1.jpg?width=1920&format=pjpg&auto=webp&s=0d5fabb921c395d9c7d1b3cc0ec16254b81b8c6b
@@ -34,30 +35,36 @@ Code -      Included bootstrap 5.3.3 js and css
     </head>
     <body>
         <div class="container-fluid parallax bg_head"></div>
-        <!-- Fixed Navbar -->
-        <nav class="navbar navbar-expand-sm bg-warning navbar-light fixed-top border-bottom border-dark">
-            <div class="container-fluid justify-content-center">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#top">Top</a>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-sm fixed-top">
+            <div class="dropdown p-3">
+                <button type="button" class="btn btn-primary dropdown-toggle border border-dark" data-bs-toggle="dropdown">
+                    Navigation
+                </button>
+                <ul class="dropdown-menu bg-dark">
+                    <li>
+                        <a class="dropdown-item text-primary" href="#top">Top</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#map">Helldivers The Game</a>
+                    <li>
+                        <hr class="dropdown-divider"></hr>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#earth">Helldivers And Super Earth</a>
+                    <li>
+                        <a class="dropdown-item text-danger" href="#map">Helldivers The Game</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#gear">Gear And Stratagems</a>
+                    <li>
+                        <a class="dropdown-item text-warning" href="#earth">Helldivers And Super Earth</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#auto">Automatons</a>
+                    <li>
+                        <a class="dropdown-item text-primary" href="#gear">Gear And Stratagems</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#term">Terminids</a>
+                    <li>
+                        <a class="dropdown-item text-danger" href="#auto">Automatons</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#illu">Other Factions</a>
+                    <li>
+                        <a class="dropdown-item text-warning" href="#term">Terminids</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item text-primary" href="#illu">Other Factions</a>
                     </li>
                 </ul>
             </div>
@@ -65,7 +72,7 @@ Code -      Included bootstrap 5.3.3 js and css
         <main>
             <!-- Body With Picture And Text -->
             <div id="map" class="container-fluid parallax bg_map"></div>
-            <div class="container-fluid bg-primary">
+            <div class="container-fluid bg-danger">
                 <h2>HELLDIVERS The Game</h2>
                 <div>
                     HELLDIVERS 2 is a 3rd person shooter in which you and up to 3 other players are launched at extremely 
