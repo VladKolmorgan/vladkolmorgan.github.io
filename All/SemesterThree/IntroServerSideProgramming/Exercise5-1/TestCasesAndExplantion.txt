@@ -1,0 +1,51 @@
+Test Cases/Results/Retesting After Solution
+
+For Double Counting
+--Test 1-- 		--Results--	--Retest--
+100			/Valid
+--Expected-- 
+Total Score: 100	/100		/100
+Average Score: 100	/50		/100
+
+For invalids
+--Test 2-- 
+-10			/Invalid
+0			/Valid
+10			/Valid
+100			/Valid
+1000			/Invalid
+--Expected--
+Total Score: 110	/110		/110
+Average Score: 36.6...	/14		/37
+
+For Decimals
+//I didn't notice the int(test_score)
+--Test 3--
+20.20			/crash
+30.30			/
+--Expected--
+Total Score: 50.5	/
+Average Score: 25.25	/
+
+For Strings
+--Test 4--
+"Test Three"		/Crash
+--Expected--
+Error
+
+For counting invalids
+--Test 5--
+-5			/Invalid
+20			/Valid
+--Expected--
+Total: 20		/20		/20
+Average Score: 20	/7		/20
+
+Takeaways:
+- If it isn't an int it crashes
+- If the input is invalid, but doesn't cause a crash, it still counts to the average
+- The second if will count the input if it is valid, but the first if will also count if the input isn't x (This means you can get 2 counts if inputs are valid in the first and in the second if statements, worse yet you'll still get a count for an invalid number)
+
+Fixes:
+- Get rid of the first counter
+- Apply exception handling to account for invalid entries that cause crashing (haven't learned it yet so I'll skip this one for now)
